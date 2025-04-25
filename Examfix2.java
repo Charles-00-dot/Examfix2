@@ -41,9 +41,12 @@ public class Examfix2
         //27 
         Collections.sort(temperatures);
         
-        for(double i : temperatures){
-            System.out.println(i);
-        }
+        // for(double i : temperatures){
+            // System.out.println(i);
+        // }
+        
+        System.out.println("Max element (sorted list)" + temperatures.get(temperatures.size()-1));
+        
         }
     }
     
