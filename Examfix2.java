@@ -1,3 +1,4 @@
+import java.util.*;
 
 /**
  * Write a description of class Examfix2 here.
@@ -22,11 +23,11 @@ public class Examfix2
     
     //25
     public void degress(){
-        ArrayList<int> temperatures = new ArrayList<int>;
-        temperatures.add(38);
-        temperatures.add(39);
-        temperatures.add(27);
-        for(int i : temperatures) {
+        ArrayList<Double> temperatures = new ArrayList<Double>();
+        temperatures.add(38.1);
+        temperatures.add(39.2);
+        temperatures.add(27.3);
+        for(double i : temperatures) {
             if(i> 37.5){
                 System.out.println(i);
             }
@@ -34,18 +35,17 @@ public class Examfix2
         
         // 26
         
-        for (int i : temperatures){
-            collection.max(i);
-            System.out.println(i.max);
-        }
+        System.out.println("Max element is: " + Collections.max(temperatures));
+        
         
         //27 
+        Collections.sort(temperatures);
         
-        for(int i ;i < temperatures.size ;i++){
-            Collections.sort(i);
-            System.out.println(i.sort);
+        for(double i : temperatures){
+            System.out.println(i);
+        }
         }
     }
     
     
-}
+
